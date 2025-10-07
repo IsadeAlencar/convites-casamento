@@ -6,7 +6,7 @@
 
 @keyframes slideinup {
     from {
-        transform: translateY(110%);
+        transform: translateY(120%);
     }
     to {
         transform: translateY(0);
@@ -35,7 +35,8 @@ body {
     border-radius: 4px;
     box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.6);
     perspective: 2200px;
-    animation: slideinup 4s ease-out;
+    animation: slideinup 4s ease-in;
+    animation-delay: 1s;
 }
 
 .cartao__fundo {
