@@ -23,7 +23,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-color: #121212;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .cartao {
@@ -280,10 +280,16 @@ p {
         display: none;
     } */
 
+    .selo {
+        top: 30%;
+        left: 25%;
+        width: 100px;
+        height: auto;
+    }
+
     .cartao__fundo {
         position: relative;
         padding: 20px;
-        z-index: 0;
     }
 
     .cartao__content {
