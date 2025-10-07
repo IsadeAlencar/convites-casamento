@@ -1,6 +1,3 @@
-// Toggle the "aberto" class on the .cartao when the .selo image is clicked.
-// This file is loaded in the <body>, so wait for DOMContentLoaded to ensure
-// elements exist before querying them.
 document.addEventListener('DOMContentLoaded', () => {
     const cartao = document.querySelector('.cartao');
     const selo = document.querySelector('.selo');
@@ -36,3 +33,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
     selo.addEventListener('click', onSeloClick);
 });
+
+function getGuestNameFromUrl() {
+    const path = window.location.pathname; 
+    let guestName = path.substring(1); 
+    if (guestName === "") {
+        return "Nossos Queridos Convidados";
+    }
+
+    guestName = guestName.replace(/-/g, ' '); 
+    guestName = guestName.split(' ')
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(' ');
+
+    return guestName;
+}
+
+const nomeConvidado = getGuestNameFromUrl();
+
+const elementoNome = document.getElementById('guest-name');
+
+if (elementoNome) {
+    elementoNome.textContent = nomeConvidado;
+}
