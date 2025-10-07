@@ -1,18 +1,19 @@
 {
   "rewrites": [
+    // 1. Garante que os arquivos da pasta 'assets' carreguem corretamente
     {
       "source": "/assets/(.*)",
-      "destination": "/convites/assets/$1"
+      "destination": "/assets/$1"
     },
-   
+    // 2. Garante que a raiz do site (/) carregue a página inicial
     {
       "source": "/",
-      "destination": "/convites/index.html"
+      "destination": "/index.html"
     },
-  
+    // 3. Regra principal: Redireciona QUALQUER outro caminho para o index.html
     {
       "source": "/:path",
-      "destination": "/convites/index.html"
+      "destination": "/index.html"
     }
   ]
 }
