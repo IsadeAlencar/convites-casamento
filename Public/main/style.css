@@ -263,3 +263,44 @@ p {
     transform: rotateY(160deg);
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
 }
+
+/* Mobile / small screens */
+@media (max-width: 600px) {
+    .cartao {
+        width: 100%;
+        aspect-ratio: auto;
+        height: auto;
+        padding: 20px 12px;
+        border-radius: 10px;
+    }
+
+    /* hide decorative panels so content is readable on small screens */
+    /* .frente__lado-esquerdo,
+    .frente__lado-direito {
+        display: none;
+    } */
+
+    .cartao__fundo {
+        position: relative;
+        padding: 20px;
+        z-index: 0;
+    }
+
+    .cartao__content {
+        gap: 8px;
+    }
+
+    .confirmar-presenca {
+        gap: 6px;
+        width: 100%;
+    }
+
+    .links-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .primary-btn, .secondary-btn {
+        width: 100%;
+    }
+}
