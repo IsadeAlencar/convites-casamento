@@ -1,19 +1,10 @@
 {
-  "rewrites": [
-    // 1. Garante que os arquivos da pasta 'assets' carreguem corretamente
+  "redirects": [
+    // Redireciona qualquer caminho, mantendo o nome na URL para o JavaScript
     {
-      "source": "/assets/(.*)",
-      "destination": "/assets/$1"
-    },
-    // 2. Garante que a raiz do site (/) carregue a página inicial
-    {
-      "source": "/",
-      "destination": "/index.html"
-    },
-    // 3. Regra principal: Redireciona QUALQUER outro caminho para o index.html
-    {
-      "source": "/:path",
-      "destination": "/index.html"
+      "source": "/:path((?!assets/).*)", 
+      "destination": "/index.html", 
+      "permanent": false
     }
   ]
 }
