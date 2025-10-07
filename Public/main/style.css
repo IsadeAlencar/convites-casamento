@@ -267,6 +267,7 @@ p {
 /* Mobile / small screens */
 @media (max-width: 600px) {
     .cartao {
+        margin-top: 16px;
         width: 100%;
         aspect-ratio: auto;
         height: auto;
@@ -282,8 +283,8 @@ p {
 
     .selo {
         top: 30%;
-        left: 25%;
-        width: 100px;
+        left: 30%;
+        width: 160px;
         height: auto;
     }
 
