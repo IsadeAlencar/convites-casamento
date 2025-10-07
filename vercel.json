@@ -1,6 +1,5 @@
 {
   "redirects": [
-    // Redireciona qualquer caminho, mantendo o nome na URL para o JavaScript
     {
       "source": "/:path((?!assets/).*)", 
       "destination": "/index.html", 
