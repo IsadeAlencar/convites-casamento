@@ -124,6 +124,10 @@ p {
     text-align: center;
 }
 
+.content__convidado {
+    text-align: center;
+}
+
 .confirmar-presenca {
     display: flex;
     flex-direction: column;
