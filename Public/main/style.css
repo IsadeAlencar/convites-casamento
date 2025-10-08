@@ -36,7 +36,6 @@ body {
     box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.6);
     perspective: 2200px;
     animation: slideinup 2s ease-in-out;
-    animation-delay: 2s;
 }
 
 .cartao__fundo {
